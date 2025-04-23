@@ -3,11 +3,12 @@ import productsImage from '../images/products.png';
 import check from '../images/check.svg';
 import quotes from '../images/quotes.png';
 import star from '../images/star.svg';
+import iso from '../images/iso.jpeg';
 
 import Header from './Header.js';
 import Footer from './Footer.js';
 
-import { numbers, whyChooseVBAbundance, services, products, reviews } from './Variables.js';
+import { numbers, whyChooseVBAbundance, services, planningSteps, products, reviews } from './Variables.js';
 
 export default function Homepage() {
 	return(
@@ -15,11 +16,11 @@ export default function Homepage() {
 			<Header />
 			<div className="font-['Lexend_Deca']">
 				<div className="max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
-					<div className="text-[#360731] mt-[50px]">
+					<div className="text-[#360731] my-[50px]">
 						<div className="flex justify-between items-center gap-[50px]">
 							<div className="max-w-[650px]">
 								<div className="text-[40px] sm:text-[48px]">VB Abundance</div>
-								<div className="text-[30px] text-[#a680c6]">Simplifying Your Wealth Journey</div>
+								<div className="text-[30px] text-[#af7bdb]">Simplifying Your Wealth Journey</div>
 								<div className="my-[30px]">
 									Welcome to VB Abundance, where your financial goals become actionable strategies. We specialize in tailored wealth management solutions for individuals and families — helping you achieve a future of financial security and prosperity.
 								</div>
@@ -32,13 +33,27 @@ export default function Homepage() {
 							</div>
 							<img src={firstSection} className="max-lg:hidden" />
 						</div>
-						<div className="flex max-sm:flex-col justify-between my-[50px] max-sm:gap-[30px] md:px-[50px]">
+						<div className="flex max-sm:flex-col justify-between my-[50px] max-sm:gap-[30px] lg:px-[50px]">
 							{numbers.map((number, index) => (
-								<div>
+								<div className="w-[300px] mx-auto">
 									<div className="text-[40px] sm:text-[48px] text-center">{number.count}</div>
 									<div className="text-center">{number.name}</div>
 								</div>
 							))}
+						</div>
+						<div className="flex justify-center gap-[50px] items-center">
+							<img src={iso} className="w-[150px]" />
+							<ul className="list-disc text-[blue] underline">
+								<a href="">
+									<li>27 Money Myths</li>
+								</a>
+								<a href="">
+									<li>test</li>
+								</a>
+								<a href="">
+									<li>Financial Planning Report</li>
+								</a>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -51,7 +66,7 @@ export default function Homepage() {
 					<div className="mx-auto w-fit mt-[30px] grid md:grid-cols-2 grid-cols-1 gap-[30px] max-w-[800px]">
 						{whyChooseVBAbundance.map((item, index) => (
 							<div className="border-[1.2px] border-solid border-[#360731] p-[20px] rounded-[10px]">
-								<div className="text-[#a680c6] text-[18px] font-medium text-center">{item.title}</div>
+								<div className="text-[#af7bdb] text-[18px] font-medium text-center">{item.title}</div>
 								<div className="text-[#360731] mt-[20px]">{item.description}</div>
 							</div>
 						))}
@@ -62,7 +77,7 @@ export default function Homepage() {
 				<div className="text-[32px] text-center font-medium">
 					Our Services
 				</div>
-				<div className="text-[20px] text-center font-medium text-[#a680c6] mt-[10px]">
+				<div className="text-[20px] text-center font-medium text-[#af7bdb] mt-[10px]">
 					Every service is designed to move you closer to financial abundance
 				</div>
 				<div className="mx-auto w-fit mt-[50px] grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
@@ -75,12 +90,28 @@ export default function Homepage() {
 					))}
 				</div>
 			</div>
+			<div className="font-medium pb-[50px] py-[50px] max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
+				<div className="text-[32px] text-center">
+					Financial Planning Process
+				</div>
+				<div className="flex flex-col gap-[50px] py-[50px] w-fit mx-auto">
+					{planningSteps.map((item, index) => (
+						<div className="flex items-start">
+							<img src={item.imageUrl} className="w-[50px] h-[50px]" />
+							<div className="ml-[20px]">
+								<div className="text-[18px] text-[#af7bdb]">{item.title}</div>
+								<div>{item.subtitle}</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
 			<div className="bg-[#fee9b2]">
 				<div className="text-[#360731] py-[50px] max-w-[1300px] mx-auto sm:px-[50px] px-[20px]">
 					<div className="text-[32px] text-center font-medium">
 						Our Products
 					</div>
-					<div className="text-[20px] text-center font-medium text-[#a680c6] mt-[10px]">
+					<div className="text-[20px] text-center font-medium text-[#af7bdb] mt-[10px]">
 						Comprehensive solutions for wealth building and protection
 					</div>
 					<div className="flex items-center mt-[50px]">

@@ -15,7 +15,7 @@ export default function Footer() {
 				</div>
 				<a href="tel:+91 9943018682">
 					<div className="text-[#360731] bg-[#E5C984] w-fit flex items-center py-[10px] px-[20px] rounded-[5px] cursor-pointer font-medium mx-auto">
-						<span className="ml-[10px]">
+						<span>
 							Book Your Free Consultation Today!
 						</span>
 					</div>
@@ -35,7 +35,7 @@ export default function Footer() {
 					</a>
 				</div>
 				<div className="text-[#E5C984] text-[24px]">
-					Your Trust. Our Priority.
+					Your Trust - Our Priority.
 				</div>
 				<div className="my-[20px] text-[18px]">
 					We adhere to the highest standards of confidentiality and ethics. Your financial journey is in safe hands.

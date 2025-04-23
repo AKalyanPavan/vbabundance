@@ -12,6 +12,13 @@ import riskManagement from '../images/icons/risk-management.svg'
 import riskProfiling from '../images/icons/risk-profiling.svg'
 import taxPlanning from '../images/icons/tax-planning.svg'
 
+import interview from '../images/financial-planning/interview.png'
+import dataGathering from '../images/financial-planning/data-gathering.png'
+import planning from '../images/financial-planning/planning.png'
+import presentation from '../images/financial-planning/presentation.png'
+import implementation from '../images/financial-planning/implementation.png'
+import update from '../images/financial-planning/update.png'
+
 export const numbers = [
 	{
 		count: '10+',
@@ -19,11 +26,11 @@ export const numbers = [
 	},
 	{
 		count: '30+',
-		name: 'Mutual funds partners',
+		name: 'Asset Management Companies',
 	},
 	{
 		count: '20+',
-		name: 'Insurance partners',
+		name: 'Financial Institutions',
 	},
 ];
 
@@ -112,6 +119,40 @@ export const services = [
 		title: 'Risk Management',
 		description: 'Proactively manage risks with diversification and insurance.',
 	},
+];
+
+export const planningSteps = [
+    {
+        imageUrl: interview,
+        title: '1. Discover interview',
+        subtitle: 'Understand your unique goals and objectives',
+    },
+    {
+        imageUrl: dataGathering,
+        title: '2. Gather data',
+        subtitle: 'Gather your data to develop your personal plan',
+    },
+    {
+        imageUrl: planning,
+        title: '3. Analyze and develop plan',
+        subtitle: 'Analyze your current situation and develop comprehensive solutions.',
+    },
+    {
+        imageUrl: presentation,
+        title: '4. Plan presentation and delivery',
+        subtitle: 'Review your plan and discuss recommended strategies',
+    },
+    {
+        imageUrl: implementation,
+        title: '5. Plan implementation',
+        subtitle: 'Implement plan recommendations',
+    },
+    {
+        imageUrl: update,
+        title: '6. Monitor and update',
+        subtitle: 'Monitor your plan and update periodically',
+        isLastItem: true,
+    }
 ];
 
 export const products = [

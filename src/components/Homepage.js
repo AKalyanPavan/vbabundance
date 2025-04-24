@@ -3,7 +3,7 @@ import productsImage from '../images/products.png';
 import check from '../images/check.svg';
 import quotes from '../images/quotes.png';
 import star from '../images/star.svg';
-import iso from '../images/iso.jpeg';
+import cfp from '../images/cfp.jpeg';
 
 import Header from './Header.js';
 import Footer from './Footer.js';
@@ -30,6 +30,18 @@ export default function Homepage() {
 										Book an Appointment
 									</span>
 								</div>
+								<img src={cfp} className="w-[150px] mt-[50px]" />
+								<ul className="list-disc text-[blue] underline gap-[10px] flex flex-col list-inside mt-[30px]">
+									<a href="">
+										<li>27 Money Myths</li>
+									</a>
+									<a href="">
+										<li>10 SMart Financial Moves every Professional should make before 40.</li>
+									</a>
+									<a href="">
+										<li>Financial planning Report</li>
+									</a>
+								</ul>
 							</div>
 							<img src={firstSection} className="max-lg:hidden" />
 						</div>
@@ -40,20 +52,6 @@ export default function Homepage() {
 									<div className="text-center">{number.name}</div>
 								</div>
 							))}
-						</div>
-						<div className="flex justify-center gap-[50px] items-center">
-							<img src={iso} className="w-[150px]" />
-							<ul className="list-disc text-[blue] underline">
-								<a href="">
-									<li>27 Money Myths</li>
-								</a>
-								<a href="">
-									<li>test</li>
-								</a>
-								<a href="">
-									<li>Financial Planning Report</li>
-								</a>
-							</ul>
 						</div>
 					</div>
 				</div>

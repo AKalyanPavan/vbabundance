@@ -1,13 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Homepage from './components/Homepage.js'
+
+import Homepage from './components/Homepage.js';
+import FormSubmit from './components/FormSubmit.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <BrowserRouter basename={'/'}>
+      <Routes>
+        <Route index path='/' element={<Homepage />} />
+        <Route path='/formsubmit' element={<FormSubmit />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

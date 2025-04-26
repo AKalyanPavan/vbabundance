@@ -32,13 +32,13 @@ export default function Homepage() {
 								</div>
 								<img src={cfp} className="w-[150px] mt-[50px]" />
 								<ul className="list-disc text-[blue] underline gap-[10px] flex flex-col list-inside mt-[30px]">
-									<a href="">
+									<a target="_blank" href="https://drive.google.com/file/d/1yFISxM1OoEZmuf0EyOC01u1kKxARTANj/view?usp=share_link">
 										<li>27 Money Myths</li>
 									</a>
-									<a href="">
+									<a target="_blank" href="https://drive.google.com/file/d/1A7GL9F74-XYaTvuqt62mFBNFrXO__z0r/view?usp=share_link">
 										<li>10 SMart Financial Moves every Professional should make before 40.</li>
 									</a>
-									<a href="">
+									<a target="_blank" href="https://drive.google.com/file/d/1FoTWGEbRgIAxR7tPrZjwjFfl_ckyE_iS/view?usp=share_link">
 										<li>Financial planning Report</li>
 									</a>
 								</ul>

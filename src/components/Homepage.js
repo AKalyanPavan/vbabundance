@@ -25,11 +25,13 @@ export default function Homepage() {
 									Welcome to VB Abundance, where your financial goals become actionable strategies. We specialize in tailored wealth management solutions for individuals and families — helping you achieve a future of financial security and prosperity.
 								</div>
 								<div>Your journey to financial freedom starts here.</div>
-								<div className="w-fit text-center bg-[#360731] py-[10px] px-[20px] rounded-[5px] cursor-pointer mt-[20px]">
-									<span className="text-[#ffffff] font-medium">
-										Book an Appointment
-									</span>
-								</div>
+								<a href="/formsubmit">
+									<div className="w-fit text-center bg-[#360731] py-[10px] px-[20px] rounded-[5px] cursor-pointer mt-[20px]">
+										<span className="text-[#ffffff] font-medium">
+											Book an Appointment
+										</span>
+									</div>
+								</a>
 								<img src={cfp} className="w-[150px] mt-[50px]" />
 								<ul className="list-disc text-[blue] underline gap-[10px] flex flex-col list-inside mt-[30px]">
 									<a target="_blank" href="https://drive.google.com/file/d/1yFISxM1OoEZmuf0EyOC01u1kKxARTANj/view?usp=share_link">

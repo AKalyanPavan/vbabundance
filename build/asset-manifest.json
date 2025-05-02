@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01b38380.css",
+    "main.js": "/static/js/main.c9f48924.js",
+    "static/js/453.4fdf122c.chunk.js": "/static/js/453.4fdf122c.chunk.js",
+    "static/media/first-section.svg": "/static/media/first-section.7ceee6a91030d56067c7e5bca1965f68.svg",
+    "static/media/products.png": "/static/media/products.67228596d90bd1cde1a3.png",
+    "static/media/logo.png": "/static/media/logo.8434ab05a0fbc1537519.png",
+    "static/media/cfp.jpeg": "/static/media/cfp.fa88fe592528bfc661b4.jpeg",
+    "static/media/data-gathering.png": "/static/media/data-gathering.5f6aacb005040d2e4b20.png",
+    "static/media/implementation.png": "/static/media/implementation.9cd512caeeadbfe0ae2e.png",
+    "static/media/interview.png": "/static/media/interview.369d80be5b3042653705.png",
+    "static/media/planning.png": "/static/media/planning.a15c4bc232851469195b.png",
+    "static/media/quotes.png": "/static/media/quotes.ed0634161107403cc28c.png",
+    "static/media/periodic-balancing.svg": "/static/media/periodic-balancing.723f9f5a46b444c917c6a6c23097818d.svg",
+    "static/media/evaluating-progress.svg": "/static/media/evaluating-progress.44ca5ba5d0f0e438a5a42bb2d8152630.svg",
+    "static/media/retirement-planning.svg": "/static/media/retirement-planning.3e57a5291358b404ca302e4480b056c2.svg",
+    "static/media/financial-planning.svg": "/static/media/financial-planning.b5acd3bc122f82b7cda88f1228e9f0b4.svg",
+    "static/media/risk-profiling.svg": "/static/media/risk-profiling.dbf57809259c472e06309b50ec6c5695.svg",
+    "static/media/estate-planning.svg": "/static/media/estate-planning.8692ba0bbd4ac138b95662e1e5708a0c.svg",
+    "static/media/risk-management.svg": "/static/media/risk-management.6ce8d1d62fbb7b9f3bc3db0a7ee9c5a5.svg",
+    "static/media/personal-organizer.svg": "/static/media/personal-organizer.46be8ed03952a5bae988e93bf0e47631.svg",
+    "static/media/tax-planning.svg": "/static/media/tax-planning.67530ad5e2704d9928d8c90b43e2be25.svg",
+    "index.html": "/index.html",
+    "static/media/investment-selection.svg": "/static/media/investment-selection.4dbcb307fa8bc6047103fdffe1aea6b2.svg",
+    "static/media/asset-allocation.svg": "/static/media/asset-allocation.ccf5f4fbac43114664ac1ff618c07922.svg",
+    "static/media/goal-setting.svg": "/static/media/goal-setting.fb056b919a70508bf48bd79f6da48455.svg",
+    "static/media/phone.svg": "/static/media/phone.147e3618253fa070693eb5aa211da989.svg",
+    "static/media/budgeting.svg": "/static/media/budgeting.d83406aadd0ccacf6f3e0822fbb07aed.svg",
+    "static/media/mail.svg": "/static/media/mail.d3c8c39fc9aea072afded22668bcb838.svg",
+    "static/media/star.svg": "/static/media/star.07b57ce68825f98ff1fedbf2eb2e2638.svg",
+    "static/media/check.svg": "/static/media/check.533e33a8886576043d21055a568edf9c.svg",
+    "main.01b38380.css.map": "/static/css/main.01b38380.css.map",
+    "main.c9f48924.js.map": "/static/js/main.c9f48924.js.map",
+    "453.4fdf122c.chunk.js.map": "/static/js/453.4fdf122c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01b38380.css",
+    "static/js/main.c9f48924.js"
+  ]
+}

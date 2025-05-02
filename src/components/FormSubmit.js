@@ -81,11 +81,8 @@ export default function FormSubmit() {
 	    }
 
 	    if (!isError) {
-	    	sendEmail(
-	    		fname.value,
-	    		femail.value,
-	    		fphonenumber.value,
-	    	);
+
+			window.centilio_connector_init.submit();
 
 	    	// Making input values empty
 	        fname.value = "";
@@ -96,52 +93,6 @@ export default function FormSubmit() {
 	        onInputFocusOut("email");
 	        onInputFocusOut("phoneNumber");
 	    }   
-	}
-
-	function sendEmail(name, email, phonenumber) {
-
-		const zapikey = process.env.REACT_APP_ZAPIKEY;
-
-		const paramsObject = {
-			full_name: name,
-			email: email,
-			mobile: phonenumber,
-		}
-
-		const myHeaders = new Headers();
-		myHeaders.append("Content-Type", "application/json");
-
-		const requestOptions = {
-			method: "POST",
-			headers: myHeaders,
-			body: JSON.stringify(paramsObject),
-			redirect: "follow",
-		};
-
-		// Construct the full URL
-		const url = `https://seobot.centilio.com/vgdsendemail`;
-
-		fetch(url, requestOptions)
-			.then((response) => {
-				if (response.ok) {
-					console.log("✅ Success");
-					return response.text();
-				} else {
-					console.error("❌ Failed with status:", response.status);
-					throw new Error("Request failed");
-				}
-			})
-			.then((result) => {
-
-		        // Opening thank-you modal
-		        openThankYouModal();
-
-				console.log("Result:", result);
-			})
-			.catch((error) => {
-				console.error("❌ Error occurred:", error.message);
-				alert(`Network error or unexpected issue occurred. Please try again. \n ${error.message}`);
-			});
 	}
 
 	function closeThankYouModal() {
@@ -171,21 +122,21 @@ export default function FormSubmit() {
 					<div className="">
 					    <div id="fullName" className="flex border-solid border-[1.5px] border-[#37405E] rounded-[5px] h-[50px] items-center hover:border-[#37405E]" onClick={() => onInputClicked("fullName", "errorName")}>
 					        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Full name</label>
-					        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("fullName")} placeholder="" type="text" id="fname" name="fname" />
+					        <input className="outline-none mx-[10px] w-[100%] centilio-input-full-name" onBlur={() => onInputFocusOut("fullName")} placeholder="" type="text" id="fname" name="fname" />
 					    </div>
 					    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorName">Full name Cannot be Empty</div>
 					</div>
 					<div className="">
 					    <div id="email" className="flex border-solid border-[1.5px] border-[#37405E] rounded-[5px] h-[50px] items-center hover:border-[#37405E]" onClick={() => onInputClicked("email", "errorEmail")}>
 					        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Email</label>
-					        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("email")} placeholder="" type="text" id="femail" name="femail" />
+					        <input className="outline-none mx-[10px] w-[100%] centilio-input-email" onBlur={() => onInputFocusOut("email")} placeholder="" type="text" id="femail" name="femail" />
 					    </div>
 					    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorEmail">Please provide a valid email</div>
 					</div>
 					<div className="">
 					    <div id="phoneNumber" className="flex border-solid border-[1.5px] border-[#37405E] rounded-[5px] h-[50px] items-center hover:border-[#37405E]" onClick={() => onInputClicked("phoneNumber", "errorPhonenumber")}>
 					        <label className="ml-[5px] absolute text-[#677788] cursor-text bg-[#FFFFFF] px-[10px]">Phone Number</label>
-					        <input className="outline-none mx-[10px] w-[100%]" onBlur={() => onInputFocusOut("phoneNumber")} placeholder="" type="text" id="fphonenumber" name="fphonenumber" />
+					        <input className="outline-none mx-[10px] w-[100%] centilio-input-mobile" onBlur={() => onInputFocusOut("phoneNumber")} placeholder="" type="text" id="fphonenumber" name="fphonenumber" />
 					    </div>
 					    <div className="text-left mt-[2px] text-[12px] text-[#ff3f3f] invisible" id="errorPhonenumber">Please provide valid phone number</div>
 					</div>
